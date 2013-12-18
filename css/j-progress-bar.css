@@ -1,0 +1,61 @@
+.jprogressBarHolder {
+	position: relative;
+	margin: 0px auto;
+	width: 300px;
+	height: 10px;
+	border: 1px solid #888;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.jprogressBarHolder .jprogressAnimationHolder {
+	position: relative;
+	width: 0;
+	background-color: #669;
+	height: 10px;
+	overflow: hidden;
+	-webkit-transition: width 500ms;
+	-moz-transition: width 500ms;
+	border-radius: 0 5px 5px 0;
+	box-shadow: 0px 0px 2px rgb(0, 0, 0);
+}
+
+.jprogressBarHolder .jprogressGradient {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 10px;
+	width: 100%;
+	background: transparent;
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, .3) 49%, transparent 50%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(49%, rgba(255, 255, 255, .3)),color-stop(50%, transparent));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, .3) 49%, transparent 50%);
+	background: -o-linear-gradient(top, rgba(255, 255, 255, .3) 49%, transparent 50%);
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, .3) 49%,transparent 50%);
+	background: linear-gradient(top, rgba(255, 255, 255, .3) 49%,transparent 50%);
+}
+
+.jloadingArrow1 {
+	position: absolute;
+	height: 0;
+	width: 0;
+	border: 16px solid;
+	border-color: transparent #aaf transparent transparent;
+}
+
+.jloadingArrow2 {
+	position: absolute;
+	top: -16px;
+	height: 0;
+	width: 0;
+	border: 16px solid;
+	border-color: transparent transparent transparent #aaa;
+}
+
+.jloadingbg1 {
+	border-left-color: #aaf;
+}
+
+.jloadingbg2 {
+	border-right-color: #669;
+}
